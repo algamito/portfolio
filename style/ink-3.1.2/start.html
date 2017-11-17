@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>start</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="ink-3.1.2/css/ink-flex.min.css">
+    <link rel="stylesheet" type="text/css" href="ink-3.1.2/css/font-awesome.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="ink-3.1.2/js/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+          test: Modernizr.flexbox,
+          nope : 'ink-3.1.2/css/ink-legacy.min.css'
+        });
+    </script>
+
+    <!-- load Ink's javascript files -->
+    <script type="text/javascript" src="ink-3.1.2/js/holder.js"></script>
+    <script type="text/javascript" src="ink-3.1.2/js/ink-all.min.js"></script>
+    <script type="text/javascript" src="ink-3.1.2/js/autoload.js"></script>
+
+	<style>
+		body{
+			font-family: Roboto,Arial,Helvetica,sans-serif;
+			font-weight: 300;
+		}
+	</style>
+</head>
+<body>
+	<div class="ink-grid">
+	   <header>
+	       <h1>Proposal<small>number</small></h1>
+	       <nav class="ink-navigation">
+	           <ul class="menu horizontal grey">
+	               <li class="active"><a href="#">Home</a></li>
+	               <li><a href="#">Activities</a></li>
+	               <li><a href="#">Detailed</a></li>
+	               <div class="button-group">
+	                   <button class="ink-button blue">MW</button>
+	                   <button class="ink-button blue">ST</button>
+	                   <button class="ink-button blue">DM</button>
+	                   <button class="ink-button blue">EP</button>
+	                   <button class="ink-button blue">CT</button>
+	               </div>
+	           </ul>
+	       </nav>
+	   </header>
+		<div class="ink-dropdown" data-target="#my-menu-dropdown" id="my-dropdown">
+		    <button class="ink-button">Dropdown</button>
+		    <ul id="my-menu-dropdown" class="dropdown-menu">
+                <li class="heading">Browse</li>
+                <li><a href="#">Back</a></li>
+                <li><a href="#">Forward</a></li>
+                <li class="heading separator-above">Clipboard</li>
+                <li><a href="#">Copy</a></li>
+                <li><a href="#">Cut</a></li>
+                <li><a href="#">Paste</a></li>
+		    </ul>
+		</div>
+		
+		
+
+	</div>
+</body>
+</html>
