@@ -120,9 +120,9 @@ jQuery(document).ready(function() {
     $('.btn').click(function() {
         $('.other_right').toggleClass('other_right_all');
         if($('.other_right_all').length > 0) {
-            $(this).html('Um a um <i class="fa fa-angle-right"></i>');
+            $(this).html('Single <i class="fa fa-angle-right"></i>');
         } else {
-            $(this).html('Todos <i class="fa fa-angle-right"></i>');
+            $(this).html('All <i class="fa fa-angle-right"></i>');
         }
         $('.direction').fadeToggle();
     })
@@ -278,28 +278,33 @@ jQuery(document).ready(function() {
         var e = $('.form_left').children('input:nth-of-type(2)').val();
         var c = $('.form_left').next('textarea').val();
 
-        $.ajax({
-          context: this,
-          url: 'edit_pages/index_edit.php',
-          data: { new_contact: '' , n: n, e: e, c: c },
-          type: 'post',
-          success: function(data) {
-            if (data == 'good') {
-                my_alert("Obrigado, entrarei em contacto o mais depressa possível", "good");
-                $('.form_left').children('input').val('');
-                $('.form_left').next('textarea').val('');
-
-            } else if(data == 'email') {
-                my_alert("Por favor insira um email válido", "info");
-            } else if(data == 'empty')  {
-                my_alert("Por favor preencha todos os campos", "info");
-            } else{
-                my_alert("Peço desculpa, ocorreu um erro. Por favor use os meus dados para entrar em contacto", "bad");
-            };
-          }
-        });
+      //  $.ajax({
+      //    context: this,
+      //    url: 'edit_pages/index_edit.php',
+      //    data: { new_contact: '' , n: n, e: e, c: c },
+      //    type: 'post',
+      //    success: function(data) {
+      //      if (data == 'good') {
+      //          my_alert("Obrigado, entrarei em contacto o mais depressa possível", "good");
+      //          $('.form_left').children('input').val('');
+      //          $('.form_left').next('textarea').val('');
+//
+      //      } else if(data == 'email') {
+      //          my_alert("Por favor insira um email válido", "info");
+      //      } else if(data == 'empty')  {
+      //          my_alert("Por favor preencha todos os campos", "info");
+      //      } else{
+      //          my_alert("Peço desculpa, ocorreu um erro. Por favor use os meus dados para entrar em contacto", "bad");
+      //      };
+      //    }
+       // });
 
         event.preventDefault();
+
+      // var f = new File([""], "filename");
+       var f = new File(["sda"], "filename.txt", {type: "text/plain", lastModified: "2017-11-17"})
+
+
     })
 
 // LIST EXPAND
