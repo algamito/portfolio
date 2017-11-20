@@ -827,8 +827,8 @@ h3 {
 	}
 	.page_tip .tip1 {
 		display: inline-block;
-		animation: tip1 .7s ease-out 2s 3;
-		-webkit-animation: tip1b .7s ease-out 2s 3;
+		/*animation: tip1 .7s ease-out 2s 3;
+		-webkit-animation: tip1b .7s ease-out 2s 3;*/
 
 	}
 
@@ -886,8 +886,8 @@ h3 {
 
 	.page_tip .tip2 {
 		display: inline-block;
-		animation: tip2 .7s ease-out 4s 3;
-		-webkit-animation: tip2b .7s ease-out 4s 3;
+		/*animation: tip2 .7s ease-out 4s 3;
+		-webkit-animation: tip2b .7s ease-out 4s 3;*/
 
 	}
 
@@ -915,8 +915,8 @@ h3 {
 	
 	.page_tip .tip3 {
 		display: inline-block;
-		animation: tip1 .7s ease-out 6s 3;
-		-webkit-animation: tip1b .7s ease-out 6s 3;
+		/*animation: tip1 .7s ease-out 6s 3;
+		-webkit-animation: tip1b .7s ease-out 6s 3;*/
 
 	}
 
@@ -989,9 +989,12 @@ h3 {
 
 	.page_active .page_tip .land_back {
 		opacity: 1;
-		-webkit-transition-delay: 11s;
+		/*-webkit-transition-delay: 11s;
 		-o-transition-delay: 11s;
-		transition-delay: 11s;
+		transition-delay: 11s;*/
+		-webkit-transition-delay: 2s;
+		-o-transition-delay: 2s;
+		transition-delay: 2s;
 	}
 
 /*MAIN*/

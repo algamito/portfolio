@@ -440,7 +440,6 @@ function remove_myalert() {
     }, 20);
 }
 
-
 function go_percent() {
     $('.otbar_in').removeClass('otbi');
     $('.otbar_in').css('width', '0');
